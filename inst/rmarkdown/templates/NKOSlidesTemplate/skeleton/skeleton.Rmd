@@ -1,0 +1,95 @@
+---
+title: "NKO Presentation Slides"
+output:
+  NKOMarkdownTemplate::nko_slides
+---
+
+```{r setup, include=FALSE}
+# SET SOME DEFAULT BEHAVIORS FOR CODE CHUNKS:
+# These defaults suppress the printing of code, function messages, and error warnings
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+# REMEMBER to set a working directory where all r-related files will live
+setwd("~/Dropbox (NewKnowledge.org)/NKO Core/NKO Current Projects/SOMEPROJECTNAME/03 Analysis/SUBDIRECTORIES/00_R_Files/")
+
+# Load global environment
+myEnvironment <- "SOMEPROJECTNAME.RData"
+if(file.exists(myEnvironment)) load(myEnvironment)
+
+# Hex values for NKO colors
+# Includes canonical shade and variations offered by MS Word
+# Dxx indicate the percentage darker than canonical shade
+# Lxx indicate the percentage lighter than canonical shade
+# 
+
+NKO.Orange <- "#F35D21"
+NKO.Orange.D50 <- "#832A07"
+NKO.Orange.D25 <- "#C43E0A"
+NKO.Orange.L40 <- "#F79D79"
+NKO.Orange.L60 <- "#FABDA6"
+NKO.Orange.L80 <- "#FCDED2"
+NKO.Blue <- "#5B7E95"
+NKO.Blue.D50 <- "#2D3F4A"
+NKO.Blue.D25 <- "#445E6F"
+NKO.Blue.L40 <- "#9AB1C1"
+NKO.Blue.L60 <- "#BBCBD6"
+NKO.Blue.L80 <- "#DDE5EA"
+NKO.Green <- "#8E8B12"
+NKO.Green.D50 <- "#464509"
+NKO.Green.D25 <- "#6A670D"
+NKO.Green.L40 <- "#E7E244"
+NKO.Green.L60 <- "#EFEC82"
+NKO.Green.L80 <- "#F7F5C0"
+NKO.Purple <- "#7D5474"
+NKO.Purple.D50 <- "#3E2A3A"
+NKO.Purple.D25 <- "#5D3F56"
+NKO.Purple.L40 <- "#B692AE"
+NKO.Purple.L60 <- "#CEB6C9"
+NKO.Purple.L80 <- "#E6DAE4"
+NKO.Yellow <- "#F1B421"
+NKO.Yellow.D50 <- "#815D08"
+NKO.Yellow.D25 <- "#C08B0C"
+NKO.Yellow.L40 <- "#F6D179"
+NKO.Yellow.L60 <- "#F9E0A5"
+NKO.Yellow.L80 <- "#FCEFD2"
+NKO.Grey <- "#585857"
+NKO.Grey.D50 <- "#2C2C2B"
+NKO.Grey.D25 <- "#414141"
+NKO.Grey.L40 <- "#9B9B99"
+NKO.Grey.L60 <- "#BCBCBB"
+NKO.Grey.L80 <- "#DDDDDD"
+
+NKO.bar.col <- c(NKO.Orange, NKO.Blue, NKO.Green, NKO.Purple, NKO.Yellow, NKO.Grey)
+NKO.contrast.pair <- c(NKO.Orange, NKO.Orange.L40, NKO.Blue, NKO.Blue.L40)
+
+# # Loads non-R system fonts, including the NKO font (Arial Narrow) and parnter fonts
+# # Uncomment the functions for analyses that will be shared with NKO writers, so they can copy/paste output
+# library(extrafont)
+# font_import() # This function only needs to be run the first time that you use the NKO R Markdown Template
+# loadfonts()
+```
+
+## Slide 1
+
+This is a customised R Markdown document for integrating writing and analysis for presentation slides. For more details on using R Markdown see <http://rmarkdown.rstudio.com>, or refer to our local resources available here:
+
+> "~/Dropbox (NewKnowledge.org)/NKO Core/Admin/Professional Development/R Training/"
+
+## Slide 2
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this (notice that the output for this chunk includes the R code):
+
+```{r cars, echo=TRUE}
+summary(cars)
+```
+
+## Slide 3
+
+You can also embed plots, for example (notice that the output for this chunk *does not* include the R code):
+
+```{r pressure}
+plot(pressure)
+```
