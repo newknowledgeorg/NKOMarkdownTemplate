@@ -1,0 +1,13 @@
+Package: NKOMarkdownTemplate
+Title: NKO R Markdown Templates
+Version: 0.0.0.9000
+Authors@R: person("NewKnowledge", "Organization", email = "library@newknowledge.org", role = c("aut", "cre"))
+Description: Provides NKO Researchers with templates to create reports of statistical analyses.
+Depends: R (>= 3.4.1)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: extrafont
+URL: https://github.com/newknowledgeorg/NKOMarkdownTemplate
+BugReports: https://github.com/newknowledgeorg/NKOMarkdownTemplate/issues

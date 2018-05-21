@@ -1,0 +1,18 @@
+---
+title: "README for NKO R Markdown Template"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This package provides an R Markdown template for researchers at New Knowledge Organization (NKO).
+
+We saved the package to a public repository to simplify installation for the NKO team and to promote transparency with our funders and partners.
+
+To install run:
+
+> <code>devtools::install_github("newknowledgeorg/NKOMarkdownTemplate")</code>
+
+We welcome comments and suggestions from other researchers.
