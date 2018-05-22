@@ -35,10 +35,10 @@ nko_slides <- function(
     fig_height = fig_height,
     fig_caption = fig_caption,
     df_print = df_print,
-    smart = highlight,
+    smart = smart,
     keep_md = keep_md,
     md_extensions = md_extensions,
-    reference_docx = reference_docx,
+    reference_doc = reference_doc,
     pandoc_args = pandoc_args
   )
 }
