@@ -29,7 +29,7 @@ nko_slides <- function(
   pandoc_args = NULL
   ) {
   # call the rmarkdown::powerpoint_presentation function
-  rmarkdown::word_document(
+  rmarkdown::powerpoint_presentation(
     toc = toc,
     fig_width = fig_width,
     fig_height = fig_height,
