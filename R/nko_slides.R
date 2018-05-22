@@ -38,7 +38,7 @@ nko_slides <- function(
     smart = highlight,
     keep_md = keep_md,
     md_extensions = md_extensions,
-    reference_docx = reference_docx,
+    reference_doc = reference_doc,
     pandoc_args = pandoc_args
   )
 }
