@@ -1,5 +1,5 @@
 ---
-title: "NKO Analysis Document"
+title: "NKO Report Document"
 output:
   NKOMarkdownTemplate::nko_report
 ---
