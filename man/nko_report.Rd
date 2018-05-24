@@ -4,8 +4,8 @@
 \alias{nko_report}
 \title{A Function to knit NKO Markdown Reports to MS Word format}
 \usage{
-nko_report(toc = FALSE, toc_depth = 3, fig_width = 5, fig_height = 4,
-  fig_caption = TRUE, df_print = "kable", smart = smart,
+nko_report(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
+  fig_caption = TRUE, df_print = "kable", smart = TRUE,
   highlight = "default",
   reference_docx = system.file("rmarkdown/templates/resources/Analyses_R_Reference_Doc_2017_10_04.docx",
   package = "NKOMarkdownTemplate"), keep_md = FALSE, md_extensions = NULL,
