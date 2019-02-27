@@ -12,12 +12,12 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-# REMEMBER to set a working directory where all r-related files will live
-setwd("~/Dropbox (NewKnowledge.org)/NKO Core/NKO Current Projects/SOMEPROJECTNAME/03 Analysis/SUBDIRECTORIES/00_R_Files/")
-
-# Load global environment
-myEnvironment <- "SOMEPROJECTNAME.RData"
-if(file.exists(myEnvironment)) load(myEnvironment)
+# # REMEMBER to set a working directory where all r-related files will live
+# setwd("~/Dropbox (NewKnowledge.org)/NKO Core/NKO Current Projects/SOMEPROJECTNAME/03 Analysis/SUBDIRECTORIES/00_R_Files/")
+# 
+# # Load global environment
+# myEnvironment <- "SOMEPROJECTNAME.RData"
+# if(file.exists(myEnvironment)) load(myEnvironment)
 
 # Hex values for NKO colors
 # Includes canonical shade and variations offered by MS Word
