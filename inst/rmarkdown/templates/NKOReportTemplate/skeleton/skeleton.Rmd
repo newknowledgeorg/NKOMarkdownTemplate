@@ -12,64 +12,30 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-# # REMEMBER to set a working directory where all r-related files will live
-# setwd("~/Dropbox (NewKnowledge.org)/NKO Core/NKO Current Projects/SOMEPROJECTNAME/03 Analysis/SUBDIRECTORIES/00_R_Files/")
-# 
-# # Load global environment
-# myEnvironment <- "SOMEPROJECTNAME.RData"
-# if(file.exists(myEnvironment)) load(myEnvironment)
+# Knology colors
+Knology.Systems.Widget <- Knology.Navy.Widget <- Knology.Blue <- "#266093"
+Knology.Blue.Highlight <- "#7D9BC0"
+Knology.Wellness.Widget <- Knology.Yellow.Widget <- "#D8C827"
+Knology.Media.Widget <- Knology.Orange.Widget <- "#F36C3E"
+Knology.Biosphere.Widget <- Knology.Green.Widget <- "#6CA443"
+Knology.Behaviors.Widget <- Knology.Blue.Widget <- "#00A2AE"
+Knology.Culture.Widget <- Knology.Purple.Widget <-"#943A80"
+Knology.Blue.Text <- DarkBlue_294C <- "#002F6C"
+Knology.Black <- Black_6C <- "#101820"
+axis.col = grey(0.8)
 
-# Hex values for NKO colors
-# Includes canonical shade and variations offered by MS Word
-# Dxx indicate the percentage darker than canonical shade
-# Lxx indicate the percentage lighter than canonical shade
-# 
+Knology.bar.col <- c(Knology.Blue.Widget, Knology.Orange.Widget, Knology.Purple.Widget, Knology.Yellow.Widget, Knology.Green.Widget, Knology.Blue)
 
-NKO.Orange <- "#F35D21"
-NKO.Orange.D50 <- "#832A07"
-NKO.Orange.D25 <- "#C43E0A"
-NKO.Orange.L40 <- "#F79D79"
-NKO.Orange.L60 <- "#FABDA6"
-NKO.Orange.L80 <- "#FCDED2"
-NKO.Blue <- "#5B7E95"
-NKO.Blue.D50 <- "#2D3F4A"
-NKO.Blue.D25 <- "#445E6F"
-NKO.Blue.L40 <- "#9AB1C1"
-NKO.Blue.L60 <- "#BBCBD6"
-NKO.Blue.L80 <- "#DDE5EA"
-NKO.Green <- "#8E8B12"
-NKO.Green.D50 <- "#464509"
-NKO.Green.D25 <- "#6A670D"
-NKO.Green.L40 <- "#E7E244"
-NKO.Green.L60 <- "#EFEC82"
-NKO.Green.L80 <- "#F7F5C0"
-NKO.Purple <- "#7D5474"
-NKO.Purple.D50 <- "#3E2A3A"
-NKO.Purple.D25 <- "#5D3F56"
-NKO.Purple.L40 <- "#B692AE"
-NKO.Purple.L60 <- "#CEB6C9"
-NKO.Purple.L80 <- "#E6DAE4"
-NKO.Yellow <- "#F1B421"
-NKO.Yellow.D50 <- "#815D08"
-NKO.Yellow.D25 <- "#C08B0C"
-NKO.Yellow.L40 <- "#F6D179"
-NKO.Yellow.L60 <- "#F9E0A5"
-NKO.Yellow.L80 <- "#FCEFD2"
-NKO.Grey <- "#585857"
-NKO.Grey.D50 <- "#2C2C2B"
-NKO.Grey.D25 <- "#414141"
-NKO.Grey.L40 <- "#9B9B99"
-NKO.Grey.L60 <- "#BCBCBB"
-NKO.Grey.L80 <- "#DDDDDD"
+# Knology.Behaviours.Face <- Knology.Blue.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button Ocean/Knology-Behaviours.svg")
+# Knology.Media.Face <- Knology.Orange.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button-Coral/Knology-Media.svg")
+# Knology.Culture.Face <- Knology.Purple.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button-Passion/Knology-Culture.svg")
+# Knology.Wellness.Face <- Knology.Yellow.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button-Citrine/Knology-Wellness.svg")
+# KKnology.Biosphere.Face <- nology.Green.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button-NewLeaf/Knology-Biosphere.svg")
+# Knology.Systems.Face <- Knology.Navy.Face <- rsvg::rsvg("~/Dropbox (Knology)/NKO Core/Z NKO Brand Tools//Logos & Icons/Other Brand Assets/Face Buttons/KNOLOGY Button- Systems/Knology-Systems.svg")
 
-NKO.bar.col <- c(NKO.Orange, NKO.Blue, NKO.Green, NKO.Purple, NKO.Yellow, NKO.Grey)
-NKO.contrast.pair <- c(NKO.Orange, NKO.Orange.L40, NKO.Blue, NKO.Blue.L40)
-
-# # Loads non-R system fonts, including the NKO font (Arial Narrow) and parnter fonts
-# # Uncomment the functions for analyses that will be shared with NKO writers, so they can copy/paste output
-# library(extrafont)
-# font_import() # This function only needs to be run the first time that you use the NKO R Markdown Template
-# loadfonts()
+# Load Knology Fonts
+sysfonts::font_add_google("Ubuntu")
+sysfonts::font_add_google("Open Sans")
 ```
 
 # Header 1

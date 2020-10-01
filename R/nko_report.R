@@ -28,7 +28,7 @@ nko_report <- function(
   df_print = "kable",
   smart = TRUE,
   highlight = "default",
-  reference_docx = system.file("rmarkdown/templates/resources/Analyses_R_Reference_Doc_2017_10_04.docx", package = "NKOMarkdownTemplate"),
+  reference_docx = system.file("rmarkdown/templates/resources/Analyses_R_Reference_Doc_2019_09_22.docx", package = "NKOMarkdownTemplate"),
   keep_md = FALSE,
   md_extensions = NULL,
   pandoc_args = NULL
@@ -41,7 +41,7 @@ nko_report <- function(
     fig_height = fig_height,
     fig_caption = fig_caption,
     df_print = df_print,
-    smart = smart,
+    #smart = smart,
     highlight = highlight,
     reference_docx = reference_docx,
     keep_md = keep_md,

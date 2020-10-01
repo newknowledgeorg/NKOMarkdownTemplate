@@ -4,11 +4,20 @@
 \alias{nko_slides}
 \title{A Function to knit NKO Markdown Reports to MS Word format}
 \usage{
-nko_slides(toc = FALSE, fig_width = 5, fig_height = 4,
-  fig_caption = TRUE, df_print = "kable", smart = TRUE,
-  md_extensions = NULL, keep_md = FALSE,
-  reference_doc = system.file("rmarkdown/templates/resources/Presentation_Template_2017_10_15.pptx",
-  package = "NKOMarkdownTemplate"), pandoc_args = NULL)
+nko_slides(
+  toc = FALSE,
+  fig_width = 5,
+  fig_height = 4,
+  fig_caption = TRUE,
+  df_print = "kable",
+  smart = TRUE,
+  md_extensions = NULL,
+  keep_md = FALSE,
+ 
+    reference_doc = system.file("rmarkdown/templates/resources/Presentation_Template_2017_10_15.pptx",
+    package = "NKOMarkdownTemplate"),
+  pandoc_args = NULL
+)
 }
 \arguments{
 \item{toc}{TRUE to include a table of contents in the output}

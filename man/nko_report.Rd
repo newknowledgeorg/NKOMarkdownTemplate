@@ -4,12 +4,22 @@
 \alias{nko_report}
 \title{A Function to knit NKO Markdown Reports to MS Word format}
 \usage{
-nko_report(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
-  fig_caption = TRUE, df_print = "kable", smart = TRUE,
+nko_report(
+  toc = FALSE,
+  toc_depth = 3,
+  fig_width = 7,
+  fig_height = 5,
+  fig_caption = TRUE,
+  df_print = "kable",
+  smart = TRUE,
   highlight = "default",
-  reference_docx = system.file("rmarkdown/templates/resources/Analyses_R_Reference_Doc_2017_10_04.docx",
-  package = "NKOMarkdownTemplate"), keep_md = FALSE, md_extensions = NULL,
-  pandoc_args = NULL)
+ 
+    reference_docx = system.file("rmarkdown/templates/resources/Analyses_R_Reference_Doc_2019_09_22.docx",
+    package = "NKOMarkdownTemplate"),
+  keep_md = FALSE,
+  md_extensions = NULL,
+  pandoc_args = NULL
+)
 }
 \arguments{
 \item{toc}{TRUE to include a table of contents in the output}

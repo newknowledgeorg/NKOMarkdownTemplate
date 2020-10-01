@@ -20,4 +20,8 @@ To install, copy/paste the following into the R console:
 
 > `devtools::install_github("newknowledgeorg/NKOMarkdownTemplate")`
 
+OR
+
+> `devtools::install_local("~/Dropbox (Knology)/NKO Core/Admin/Professional Development/R Training/NKOMarkdownTemplate/")`
+
 We welcome comments and suggestions from other researchers.
